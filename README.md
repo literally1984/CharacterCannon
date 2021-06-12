@@ -1,5 +1,5 @@
 # CharacterCannon
-Make any character print out as many times as you want.
+Make any character(s) print out as many times as you want.
 
 IMPORTANT:
 
