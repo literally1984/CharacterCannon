@@ -1,7 +1,8 @@
 import java.util.Scanner;
 class Main {
   public static void main(String[] args) {
-    System.out.println("What character do you want to load into the cannon?");
+    System.out.print("\033[H\033[2J");
+    System.out.println("What ammunition do you want to load into the cannon?");
     Scanner inputcharObj = new Scanner(System.in);
     String inputchar = inputcharObj.nextLine();
     System.out.println("Enter the amount of times you want " + "'" + inputchar + "'" + " to be fired from the cannon:");
@@ -25,11 +26,14 @@ class Main {
         }
       }
     }
+    System.out.print("\033[H\033[2J");
     long numoftimes = Long.parseLong(inputnumtimes);
     inputchar = inputchar + " ";
-    for (int i = 0; i <= numoftimes; i++) {
+    for (int i = 0; i < numoftimes; i++) {
       System.out.print(inputchar);
     }
-    System.out.println(inputchar + " was printed " + numoftimes + " times");
+    inputchar = inputchar + "\b";
+    System.out.println("");
+    System.out.println("'" + inputchar + "'" + " was printed " + numoftimes + " times");
   }
 }
