@@ -1,5 +1,6 @@
 # CharacterCannon
 Make any character print out as many times as you want.
+
 IMPORTANT:
 
 This program utilizes ANSI escape codes, which are used to clear the console.
