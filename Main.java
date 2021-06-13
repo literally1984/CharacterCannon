@@ -2,11 +2,10 @@ import java.util.Scanner;
 class Main {
   public static void main(String[] args) {
     System.out.print("\033[H\033[2J");
-    System.out.println("What ammunition do you want to load into the cannon?");
+    System.out.println("What character(s) do you want to load into the cannon?");
     Scanner inputcharObj = new Scanner(System.in);
     String inputchar = inputcharObj.nextLine();
     System.out.println("Enter the amount of times you want " + "'" + inputchar + "'" + " to be fired from the cannon:");
-    System.out.println("Remember that your input mustn't include characters other than numbers.");
     Scanner inputnumtimesObj = new Scanner(System.in);
     boolean inputgoodornot = false;
     String inputnumtimes = "";
