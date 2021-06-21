@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 class Main {
   public static void main(String[] args) {
     System.out.print("\033[H\033[2J");
@@ -17,6 +18,11 @@ class Main {
       while (keeptrack < inputlength) {
         if (inputnumtimes.charAt(keeptrack) >= '0' && inputnumtimes.charAt(keeptrack) <= '9') {
           keeptrack = keeptrack + 1;
+        }
+        else if (inputnumtimes.substring(0,1).equals("-")) {
+          inputgoodornot = false;
+          System.out.println("Error: Entered number must not be negative. Try again?");
+          break;
         }
         else {
           inputgoodornot = false;
