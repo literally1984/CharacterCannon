@@ -1,8 +1,6 @@
-package uiy2;
-
 import java.util.Scanner;
 
-class UiY {
+class Main {
   public static void main(String[] args) {
     System.out.print("\033[H\033[2J");
     System.out.println("What character(s) do you want to load into the cannon?");
